@@ -17,7 +17,7 @@ body {
     height: 100%;
 }
 
-#nomeSite {
+#h1_msg {
     float: left;
     margin: 0px;
 }
@@ -38,21 +38,40 @@ nav ul {
     margin-top: 0px;
 }
 
-nav ul li {
+nav  li {
     display: inline;
     margin-left: 10px;
     font-family: Arial;
 }
 
-.banner {
-    height: 400px;
-    
+#linhaTopo {
+    height: 2px;
+    background-color: orangered;
+}
+
+.apresentacao {
+    background-image: url("./imagens/team.png") ;
+    /* background-repeat: no-repeat;    */
+    background-size: cover;
+    height: 410px;
+    width: 100%;
+
+}
+
+#h1_msg2 {
+    float: left;
+    margin: 0px;
+    font-size: 30px;
 }
 
 #input_email {
     margin-left: 850px;
-    padding-top: 14px;
+    padding-top: 8px;
 } 
+
+#inputmeio {
+    height: 25px;
+}
 
 #caixa2 {
     margin: 0 auto;
@@ -70,4 +89,56 @@ nav ul li {
 #botao {
     background-color: orangered;
     border-color: orangered;
+    height: 30px;
+    color: white;
+}
+
+#tituloApresentacao {
+    color: orangered;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 150px;
+}
+
+#textoApresentacao {
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.valores {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#caixaimg {
+
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-family: arial;
+    padding-top:15px;
+}
+
+#combo {
+    margin: 10px;
+}
+#combo img {
+    width: 120px;
+}
+
+#linhaFim {
+    height: 60px;
+    background-color: orangered;
+}
+
+#textoFim {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-family: arial;
 }
