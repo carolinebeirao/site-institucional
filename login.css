@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    height: 60px;
+    border-bottom: 4px solid rgb(0, 140, 255);
+}
+
+#caixa {
+    margin: 0 auto;
+    padding-top:5px ;
+    width: 90%;
+    height: 100%;
+}
+
+#h1_msg {
+    float: left;
+    margin: 0px;
+}
+
+#destaque_cor {
+    color: rgb(0, 140, 255);
+}
+
+#caixa h1 {
+    margin-top: 0;
+    padding-top: 5px;
+    font-family: Arial;
+}
+
+nav ul {
+    padding-left: 850px;
+    padding-top: 18px;
+    margin-top: 0px;
+}
+
+nav  li {
+    display: inline;
+    margin-left: 10px;
+    font-family: Arial;
+}
+
+
+.box-login {
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 40%;
+  box-shadow: 3px 3px 5px 2px rgb(47, 96, 170); /* Cria uma sombra no elemento box-login */
+ 
+}
+
+.box-login h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  margin: 90px auto;
+  padding-left: 40%;
+  margin-bottom: 15px;
+}
+
+.input-padrao {
+  height: 25px;
+  width: 300px;
+}
+
+.btn-green {
+  background-color: rgb(0, 140, 255);
+    border-color:rgb(0, 140, 255);
+    height: 30px;
+    color: white; 
+    border-radius: 5px;
+     
+  cursor: pointer;
+  margin-left: 40%;
+  margin-bottom: 30px;
+  height: 30px;
+  */
+  /* 
+  Deixa o ponteiro do mouse no formato maozinha
+  que representa para o usuario que aquele elemento pode ser clicavel
+   */
+  
+}
+
+form div {
+  margin: 0 auto;
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+
+} 
+
+#linhaFim {
+  height:90px;
+  background-color: rgb(0, 140, 255);
+}
+
+#linhaFim p {
+  color: aliceblue;
+  margin: 0 auto ;
+  width: 32%;
+  padding-top: 40px;
+  margin-top: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+}
