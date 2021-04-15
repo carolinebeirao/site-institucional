@@ -47,7 +47,7 @@
   var ctx = chart.getContext("2d");
 
   var config = {
-    type: "bar",
+    type: "line",
     data: {
       labels: ["Tempo de resposta", "Precisão","outra coisa", "outra coisa tbm"],
       datasets: [
@@ -94,9 +94,6 @@
     }
   },
 };
-  
-  
-  
 
   new Chart(ctx, config); 
 </script>
