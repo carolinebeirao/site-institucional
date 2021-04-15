@@ -12,24 +12,48 @@
     <title>chart</title>
   </head>
   <body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="caixa">
+            <h1 id="h1_msg"><span id="destaque_cor">Projeto</span> Iot Revolucionario</h1>
+            <nav>
+                <ul>
+                    <li id="destaque_cor">HOME</li>
+                    <li>SOBRE</li>
+                    <li>CONTATO</li>
+                    <li>LOGIN</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <div style="width: 80%; height: 100px">
       <canvas id="chart"></canvas>
     </div>
   </body>
 </html>
 <script>
-  // Cria o contexto do CANVAS
+
   var ctx = chart.getContext("2d");
 
-  // Configuracao do grafico
   var config = {
-    type: "bar", // Aqui falo qual modelo de grafico vou querer
+    type: "bar",
     data: {
-      labels: ["Libertadores", "Mundial", "Brasileirão", "Paulistão"], // Aqui são as legendas do grafico
+      labels: ["Mundial", "Brasileirão","Libertadores", "Paulistão"],
       datasets: [
         {
-          label: "São Paulo ", // Titulo do grafico
-          data: [3,3, 3, 21], // Dados do grafico
+          label: "São Paulo ",
+          data: [3,3, 6, 21], 
           backgroundColor: [
           "rgba(75, 192, 192, 0.2)",
           ],
@@ -39,8 +63,8 @@
           borderWidth: 3,
         },
         {
-          label: "Corinthianss", // Titulo do grafico
-          data: [1, 1, 7, 30], // Dados do grafico
+          label: "Corinthianss", 
+          data: [1, 7, 1, 30],
           backgroundColor: [
           "rgba(255, 206, 86, 0.2)"
           ],
@@ -63,9 +87,8 @@
         display: true,
         position: 'right',
 
-        // grid line settings
         grid: {
-          drawOnChartArea: false, // only want the grid lines for one axis to show up
+          drawOnChartArea: false,
         },
       },
     }
@@ -75,5 +98,5 @@
   
   
 
-  new Chart(ctx, config); // Aqui chamo a funcao Chart que foi inserida no meu projeto na linha 7
+  new Chart(ctx, config); 
 </script>
