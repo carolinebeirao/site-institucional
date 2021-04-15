@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"
+      integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="
+      crossorigin="anonymous"
+    ></script>
+    <title>chart</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100px">
+      <canvas id="chart"></canvas>
+    </div>
+  </body>
+</html>
+<script>
+  // Cria o contexto do CANVAS
+  var ctx = chart.getContext("2d");
+
+  // Configuracao do grafico
+  var config = {
+    type: "bar", // Aqui falo qual modelo de grafico vou querer
+    data: {
+      labels: ["Libertadores", "Mundial", "Brasileirão", "Paulistão"], // Aqui são as legendas do grafico
+      datasets: [
+        {
+          label: "São Paulo ", // Titulo do grafico
+          data: [3,3, 3, 21], // Dados do grafico
+          backgroundColor: [
+          "rgba(75, 192, 192, 0.2)",
+          ],
+          borderColor: [
+          "rgba(54, 162, 235, 1)",
+          ],
+          borderWidth: 3,
+        },
+        {
+          label: "Corinthianss", // Titulo do grafico
+          data: [1, 1, 7, 30], // Dados do grafico
+          backgroundColor: [
+          "rgba(255, 206, 86, 0.2)"
+          ],
+          borderColor: [
+          "rgba(255, 206, 86, 1)",
+          ],
+          borderWidth: 3,
+        },
+      ],
+    },
+    options: {
+       scales: {
+      y: {
+        type: 'linear',
+        display: true,
+        position: 'left',
+      },
+      y1: {
+        type: 'linear',
+        display: true,
+        position: 'right',
+
+        // grid line settings
+        grid: {
+          drawOnChartArea: false, // only want the grid lines for one axis to show up
+        },
+      },
+    }
+  },
+};
+  
+  
+  
+
+  new Chart(ctx, config); // Aqui chamo a funcao Chart que foi inserida no meu projeto na linha 7
+</script>
