@@ -37,7 +37,7 @@
             </nav>
         </div>
     </div>
-    <div style="width: 80%; height: 100px">
+    <div id="grafic" style="width: 80%; height: 100px">
       <canvas id="chart"></canvas>
     </div>
   </body>
@@ -49,10 +49,10 @@
   var config = {
     type: "bar",
     data: {
-      labels: ["Mundial", "Brasileirão","Libertadores", "Paulistão"],
+      labels: ["Tempo de resposta", "Precisão","outra coisa", "outra coisa tbm"],
       datasets: [
         {
-          label: "São Paulo ",
+          label: "Antes da nossa solução ",
           data: [3,3, 6, 21], 
           backgroundColor: [
           "rgba(75, 192, 192, 0.2)",
@@ -63,8 +63,8 @@
           borderWidth: 3,
         },
         {
-          label: "Corinthianss", 
-          data: [1, 7, 1, 30],
+          label: "Depois da nossa solução", 
+          data: [1, 7, 8, 25],
           backgroundColor: [
           "rgba(255, 206, 86, 0.2)"
           ],
